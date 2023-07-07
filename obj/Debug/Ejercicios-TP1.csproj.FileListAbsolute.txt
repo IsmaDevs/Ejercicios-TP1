@@ -1,0 +1,3 @@
+C:\Users\W10-PC\documents\visual studio 2015\Projects\TPN1Lab-I\TPN1Lab-I\bin\Debug\TPN1Lab-I.exe.config
+C:\Users\W10-PC\documents\visual studio 2015\Projects\TPN1Lab-I\TPN1Lab-I\obj\Debug\TPN1Lab-I.exe
+C:\Users\W10-PC\documents\visual studio 2015\Projects\TPN1Lab-I\TPN1Lab-I\obj\Debug\TPN1Lab-I.pdb
