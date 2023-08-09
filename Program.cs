@@ -11,18 +11,6 @@ namespace TPN1Lab_I
         static void Main(string[] args)
         {
             // Trabajo Práctico N° 1 - Laboratorio I
-            // Grupo #2
-            // Integrantes:
-            // -
-            // -
-            // -
-            // -
-            Console.WriteLine("-------------------------------------------------------");
-            Console.WriteLine("|                                                     |");
-            Console.WriteLine("| Bienvenido a los ejercicios resueltos del grupo #2  |");
-            Console.WriteLine("|                                                     |");
-            Console.WriteLine("-------------------------------------------------------");
-            Console.WriteLine("");
 
             //-----------------------------------------------------------
 
@@ -31,7 +19,7 @@ namespace TPN1Lab_I
             Console.WriteLine();
             Console.Write("Por favor ingrese un número: ");
             numero1 = int.Parse(Console.ReadLine());
-            
+
             int numero2;
             Console.WriteLine();
             Console.Write("Ahora ingrese otro número: ");
@@ -148,7 +136,7 @@ namespace TPN1Lab_I
             Console.Write($"Ahora ingrese la cantidad de articulo que lleva de {articulo}: ");
             cantidad = int.Parse(Console.ReadLine());
 
-            int abonar; 
+            int abonar;
             abonar = cantidad * 80;
 
             Console.WriteLine();
@@ -167,10 +155,12 @@ namespace TPN1Lab_I
             Console.Write("Ingrese su sueldo: ");
             sueldo1 = int.Parse(Console.ReadLine());
 
-            if (sueldo1 > 3000) {
+            if (sueldo1 > 3000)
+            {
                 Console.WriteLine();
                 Console.WriteLine("Debe pagar impuestos");
-            } else 
+            }
+            else
             {
                 Console.WriteLine();
                 Console.WriteLine("Usted no debe pagar impuestos");
@@ -204,7 +194,8 @@ namespace TPN1Lab_I
                 Console.WriteLine("");
                 Console.WriteLine($"La suma de los numeros ingresados es {suman1n2} y la diferencia es de {diferencia}");
 
-            } else
+            }
+            else
             {
                 producto = n1 * n2;
                 division = n1 / n2;
@@ -246,7 +237,8 @@ namespace TPN1Lab_I
             {
                 Console.WriteLine();
                 Console.WriteLine($"{alumno} Alumno Promocionado");
-            } else
+            }
+            else
             {
                 Console.WriteLine();
                 Console.WriteLine($"El Alumno {alumno} no Promociono");
@@ -268,21 +260,22 @@ namespace TPN1Lab_I
             {
                 Console.WriteLine("");
                 Console.WriteLine("El número tiene solo un digito");
-            } else if (num >= 10 && num < 100)
+            }
+            else if (num >= 10 && num < 100)
             {
                 Console.WriteLine("");
                 Console.WriteLine("El numero tiene solo dos digitos");
-            } else if (num >= 100 && num < 1000)
+            }
+            else if (num >= 100 && num < 1000)
             {
                 Console.WriteLine("");
                 Console.WriteLine("El numero tiene solo tres digitos");
-            } else
+            }
+            else
             {
                 Console.WriteLine("");
                 Console.WriteLine("Error: El numero que ingreso tiene más de tres digitos o es negativo");
             }
-
-            Console.ReadKey();
 
             string opcion;
             int numm1;
@@ -303,9 +296,55 @@ namespace TPN1Lab_I
                     break;
             }
 
-            Console.ReadKey();
-            
 
+            Console.WriteLine("");
+            Console.WriteLine("-------------------------------");
+            Console.WriteLine("");
+            Console.WriteLine("Ejercicio N° 10");
+
+            int number;
+
+            Console.Write("Por favor ingrese un numero entero: ");
+
+            number = int.Parse(Console.ReadLine());
+
+            if (number == 0) Console.WriteLine("El numero ingresado es nulo");
+            if (number < 0) Console.WriteLine("El numero ingresado es negativo");
+            if (number > 0) Console.WriteLine("El numero ingresado es positivo");
+
+            Console.WriteLine("");
+            Console.WriteLine("-------------------------------");
+            Console.WriteLine("");
+            Console.WriteLine("Ejercicio N° 11");
+
+            int number1;
+            int number2;
+
+            Console.Write("Ingrese la cantidad de preguntas que realizo (1 - 10): ");
+            number1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Ingrese ahora la cantidad de preguntas contestadas bien: ");
+            number2 = int.Parse(Console.ReadLine());
+
+            if (number2 >= 0)
+            {
+                Console.WriteLine("Nivel insuficiente: 50%");
+            }
+            else if (number2 >= 5 && number2 < 6)
+            {
+                Console.WriteLine("Nivel regular: 60% - 70%");
+            }
+            else if (number2 >= 7 && number2 < 10)
+            {
+                Console.WriteLine("Nivel medio: 80% - 90%");
+            }
+            else if (number2 >= 10)
+            {
+                Console.WriteLine("Nivel máximo: 100%");
+            }
+
+
+            Console.ReadKey();
         }
     }
 }
